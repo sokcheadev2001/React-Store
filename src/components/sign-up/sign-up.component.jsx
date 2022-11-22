@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   createAuthUserWithEmailAndPassword,
   createUserDocumentFromAuth,
@@ -90,8 +90,8 @@ const SignUpForm = () => {
           value={confirmPassword}
         />
 
-        <Button buttonType='google' type='submit'>
-          Submit
+        <Button buttonType='inverted' type='submit'>
+          Sign Up
         </Button>
       </form>
     </div>
