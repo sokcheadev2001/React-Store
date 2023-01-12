@@ -6,11 +6,11 @@ import { ReactComponent as Logo } from "../../assets/crown.svg";
 import { signOutUser } from "../../utils/firebase/firebase.utils";
 import CartIcon from "../../components/cart-icon/cart-icon.component";
 import CartDropDown from "../../components/cart-dropdown/cart-dropdown.component";
-import { DropdownContext } from "../../contexts/cart.context";
+import { CartContext } from "../../contexts/cart.context";
 
 const NavigationBar = () => {
   const { currentUser } = useContext(UserContext);
-  const { isCartShow } = useContext(DropdownContext);
+  const { isCartShow } = useContext(CartContext);
   return (
     <>
       <div className='navigation'>
